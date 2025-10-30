@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Test - Reborn Transport</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .device-frame {
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .device-label {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-xl font-bold text-center mb-8">Responsive Design Test</h1>
+        
+        <!-- Mobile View (320px) -->
+        <div class="device-label">Mobile View (320px)</div>
+        <div class="device-frame" style="width: 320px; margin: 0 auto;">
+            <div class="bg-blue-600 text-white p-4 rounded-lg mb-4">
+                <h2 class="text-2xl font-bold">Reborn Transport</h2>
+                <nav class="mt-2 md:hidden">
+                    <button class="text-white">
+                        <i class="fas fa-bars"></i> Menu
+                    </button>
+                </nav>
+            </div>
+            <div class="bg-gray-200 h-40 rounded-lg mb-4 flex items-center justify-center">
+                <span class="text-gray-600">Hero Image</span>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Our Services</h3>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="bg-white p-3 rounded shadow">
+                    <div class="font-bold">Car Rental</div>
+                    <p class="text-sm">Professional drivers</p>
+                </div>
+                <div class="bg-white p-3 rounded shadow">
+                    <div class="font-bold">Airport Transfers</div>
+                    <p class="text-sm">Reliable service</p>
+                </div>
+            </div>
+            <div class="mt-4 flex flex-col gap-2">
+                <button class="bg-blue-600 text-white py-2 px-4 rounded">Book Now</button>
+                <button class="border border-blue-600 text-blue-600 py-2 px-4 rounded">Learn More</button>
+            </div>
+        </div>
+        
+        <!-- Tablet View (768px) -->
+        <div class="device-label">Tablet View (768px)</div>
+        <div class="device-frame" style="width: 768px; margin: 20px auto;">
+            <div class="bg-blue-600 text-white p-4 rounded-lg mb-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-bold">Reborn Transport</h2>
+                    <nav class="hidden md:block">
+                        <ul class="flex space-x-4">
+                            <li><a href="#" class="hover:underline">Home</a></li>
+                            <li><a href="#" class="hover:underline">Services</a></li>
+                            <li><a href="#" class="hover:underline">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="md:hidden text-white">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-gray-200 h-64 rounded-lg mb-6 flex items-center justify-center">
+                <span class="text-gray-600">Hero Image</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-center">Our Services</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <div class="font-bold">Car Rental</div>
+                    <p>Professional drivers with local expertise</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <div class="font-bold">Airport Transfers</div>
+                    <p>Reliable service from ferry terminals</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <div class="font-bold">Tours</div>
+                    <p>Explore Batam islands</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <div class="font-bold">Events</div>
+                    <p>Special occasions and conferences</p>
+                </div>
+            </div>
+            <div class="mt-6 flex justify-center gap-4">
+                <button class="bg-blue-600 text-white py-3 px-6 rounded-lg">Book via WhatsApp</button>
+                <button class="border-2 border-blue-600 text-blue-600 py-3 px-6 rounded-lg">Get a Quote</button>
+            </div>
+        </div>
+        
+        <!-- Desktop View (1200px) -->
+        <div class="device-label">Desktop View (1200px)</div>
+        <div class="device-frame" style="width: 1200px; margin: 20px auto;">
+            <div class="bg-blue-600 text-white p-4 rounded-lg mb-6">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xl font-bold">Reborn Transport</h2>
+                    <nav class="hidden md:block">
+                        <ul class="flex space-x-4">
+                            <li><a href="#" class="hover:underline">Home</a></li>
+                            <li><a href="#" class="hover:underline">About Us</a></li>
+                            <li><a href="#" class="hover:underline">Services</a></li>
+                            <li><a href="#" class="hover:underline">Gallery</a></li>
+                            <li><a href="#" class="hover:underline">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="flex items-center space-x-2">
+                        <a href="#" class="bg-blue-800 px-3 py-1 rounded text-sm">EN</a>
+                        <a href="#" class="bg-gray-200 text-gray-800 px-3 py-1 rounded text-sm">ID</a>
+                        <a href="#" class="bg-gray-200 text-gray-800 px-3 py-1 rounded text-sm">中文</a>
+                        <button class="md:hidden text-white">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-200 h-96 rounded-lg mb-8 flex items-center justify-center">
+                <span class="text-gray-600 text-2xl">Hero Image with Text Overlay</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-6 text-center">Our Comprehensive Services</h3>
+            <div class="grid grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-3xl mb-3">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Car Rental</h4>
+                    <p class="text-gray-600">Flexible hourly or daily rentals with professional drivers</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-3xl mb-3">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Airport Transfers</h4>
+                    <p class="text-gray-600">Seamless transfers to and from Hang Nadim Airport</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-3xl mb-3">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Tours & Sightseeing</h4>
+                    <p class="text-gray-600">Expertly planned tours of Batam islands</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-3xl mb-3">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Special Events</h4>
+                    <p class="text-gray-600">Conferences and other special occasions</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300">
+                    Book Your Journey Today
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
